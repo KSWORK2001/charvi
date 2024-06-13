@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #dfc8fdd3;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Pacifico', cursive;
+  transition: padding 0.3s ease-in-out;
+  position: relative; /* Ensures hearts are positioned relative to the footer */
+  overflow: hidden; /* Prevents hearts from making the page longer */
+}
+
+.footer div {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer .days-passed {
+  display: inline-block;
+  transition: transform 0.6s ease-in-out;
+}
+
+.footer .days-passed:hover {
+  animation: growAndBurst 1.5s ease-in-out, vibrate 0.3s ease-in-out 1.5s;
+}
+
+/* Keyframes for the grow and burst effect */
+@keyframes growAndBurst {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Keyframes for the vibration effect */
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Heart styles and animation */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: rotate(45deg);
+  animation: floatAndDisappear 3s linear infinite;
+  opacity: 0;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: -10px;
+}
+
+@keyframes floatAndDisappear {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(45deg);
+    opacity: 0;
+  }
+}

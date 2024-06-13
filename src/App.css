@@ -1,38 +1,66 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 0 10%; /* Creates a 1/10 gap on each side */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-section {
+  flex: 1; /* Ensure the main section fills the vertical space */
+  background-color: hsl(187, 100%, 27%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-title {
+  font-family: 'Pacifico', cursive;
+  color: #eadfff;
+  font-size: 66px;
+  margin-bottom: 40px;
+  transition: color 0.3s ease, font-size 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.main-paragraph {
+  font-family: 'Pacifico', cursive;
+  color: #eadfff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+
+audio {
+  display: none;
+}
+
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

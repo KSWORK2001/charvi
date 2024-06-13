@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #dfc8fdd3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Pacifico', cursive;
+}
+
+.names {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.names .charvi, .names .karan {
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.names .charvi:hover {
+  transform: scale(1.2);
+  color: #ffa1b1;
+}
+
+.names .karan:hover {
+  transform: scale(1.2);
+  color: blue;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  position: relative;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dfc8fdd3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #dfc8fdd3;
+}
