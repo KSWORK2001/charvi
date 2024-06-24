@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './TugOfWar.css';
 import { FaMale, FaFemale } from 'react-icons/fa';
-import Letters from './Letters';
+import Letters from './Alphabets';
 
 const randomLetter = () => {
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
