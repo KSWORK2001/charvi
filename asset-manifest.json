@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/charvi/static/css/main.78213163.css",
+    "main.js": "/charvi/static/js/main.b8579a03.js",
+    "static/js/453.229acdd4.chunk.js": "/charvi/static/js/453.229acdd4.chunk.js",
+    "index.html": "/charvi/index.html",
+    "main.78213163.css.map": "/charvi/static/css/main.78213163.css.map",
+    "main.b8579a03.js.map": "/charvi/static/js/main.b8579a03.js.map",
+    "453.229acdd4.chunk.js.map": "/charvi/static/js/453.229acdd4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78213163.css",
+    "static/js/main.b8579a03.js"
+  ]
+}
