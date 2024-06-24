@@ -16,7 +16,7 @@ const Header = () => {
       </div>
       <nav className="nav-links">
         <div className="dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-          <Link to="/letters" className="dropdown-toggle">Letters</Link>
+          <Link to="/" className="dropdown-toggle">Letters</Link>
           {dropdownOpen && (
             <div className="dropdown-menu">
               <Link to="/">First Month</Link>
