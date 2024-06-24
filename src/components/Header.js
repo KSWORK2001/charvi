@@ -25,10 +25,10 @@ const Header = () => {
             </div>
           )}
         </div>
-        <Link to="/timeline">Timeline</Link>
-        <Link to="/memories">Memories</Link>
-        <Link to="/photos-videos">Photos/Videos</Link>
-        <Link to="/tug-of-war">Tug of War</Link>
+        <Link to="/charvi/timeline">Timeline</Link>
+        <Link to="/charvi/memories">Memories</Link>
+        <Link to="/charvi/photos-videos">Photos/Videos</Link>
+        <Link to="/charvi/tug-of-war">Tug of War</Link>
       </nav>
     </header>
   );
