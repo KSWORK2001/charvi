@@ -19,7 +19,7 @@ const Header = () => {
           <Link to="/" className="dropdown-toggle">Letters</Link>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <Link to="/">First Month</Link>
+              <Link to="/month">First Month</Link>
               <Link to="/letters/letter2">Charvi's Poems</Link>
               <Link to="/letters/letter3">Letter 3</Link>
             </div>

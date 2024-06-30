@@ -1,7 +1,7 @@
 // src/pages/Home.js
 import React from 'react';
 
-const Home = () => {
+const Month = () => {
   return (
     <section className="main-section">
           <h1 className="main-title">What an amazing month! :)</h1>
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Month;
