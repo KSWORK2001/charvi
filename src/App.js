@@ -11,7 +11,7 @@ import PhotosVideos from './pages/PhotosVideos';
 import TugOfWar from './pages/TugOfWar';
 import AboutCharvi from './pages/AboutCharvi';
 import AboutKaran from './pages/AboutKaran';
-import Letters from './pages/Letters';
+import Memoirs from './pages/Memoirs';
 import './App.css';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
             <Route path="/tug-of-war" element={<TugOfWar />} />
             <Route path="/about-Charvi" element={<AboutCharvi />} />
             <Route path="/about-Karan" element={<AboutKaran />} />
-            <Route path="/letters" element={<Letters />} />
+            <Route path="/memoirs" element={<Memoirs />} />
             <Route path="/alphabets" element={<Alphabets />} />
           </Routes>
         </main>
