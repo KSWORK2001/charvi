@@ -20,8 +20,8 @@ const Header = () => {
           {dropdownOpen && (
             <div className="dropdown-menu">
               <Link to="/month">First Month</Link>
-              <Link to="/letters/letter2">Charvi's Poems</Link>
-              <Link to="/letters/letter3">Letter 3</Link>
+              <Link to="/letter2">Charvi's Poems</Link>
+              <Link to="/letter3">Letter 3</Link>
             </div>
           )}
         </div>

@@ -21,7 +21,7 @@ function App() {
         <Header />
         <main className="content">
           <Routes>
-            <Route path="/" element={<Month />} />
+            <Route path="/month" element={<Month />} />
             <Route path="/about" element={<About />} />
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/memories" element={<Memories />} />
